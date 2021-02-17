@@ -1,38 +1,204 @@
-.App {
+.row{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.col-3{
+  width: 25%;
+}
+.product{
+  padding:25px;
+  width:100%;
+  overflow: hidden;
+}
+.product_img{
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.product_img img:hover{
+  transform: scale(1.1);
+}
+.product_img img{
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s linear;
+}
+.product_name{
+  margin: 10px 0;
+  text-transform: capitalize;
+  color: #707070;
+}
+.product_price{
+  text-align: left;
+  color: black;
+  font-size: 20px;
+}
+.mt-100{
+  margin-top: 100px;
+}
+.detail_image{
+  width: 100%;
+  height: auto;
+  padding-right: 30px;
+}
+.detail_image img{
+  width: 50%;
+  margin-bottom: 25px;
+}
+
+.detail_name{
+  font-size: 30px;
+  color: #2c2c2c;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.detail_price{
+  font-size: 20px;
+}
+.dec,
+.inc,
+.quantity{
+  width: 60px;
+  height: 60px;
+  border: 1px solid silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quantity{
+  border-left: none;
+  border-right: none;
+}
+.dec,
+.inc{
+  cursor: pointer;
+}
+.detail_info{
+  margin-top: 10px;
+}
+.btn-default{
+  margin-left: 10px;
+  width: 100%;
+  border: none;
+  background: rgb(241, 92, 32);
+  color: rgb(255, 241, 241);
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.detail_incdec{
+  display: flex;
+}
+.detail_p{
+  margin-top: 15px;
+}
+.detail_p h4{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.col-12{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.col-12 input{
+  margin: 10px;
+  margin-left: 140px;
+}
+h1{
+  margin-left: 50px;
+  color:rgb(9, 9, 27);
+  text-shadow: 0px 2px 4px rgb(12, 10, 10);
+}
+.btn{
+  margin-left: 140px;
+}
+.btn2{
+  margin-top: 30px;
+  margin-left: 400px;
+}
+
+.product_edit{
+  margin-left: 50px;
+}
+
+.cart_icon{
+  color: orangered;
+  font-size: 22px;
+}
+.basket{
+  position: relative;
+}
+.basket span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -13px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background: #4c5a68;
+  border-radius: 50%;
+  color: white;
+  font-size: 12px;
+}
+.cart{
+  margin-top: 18px;
+  margin-left: 80px;
+}
+h3{
+  color: black;
+  text-shadow: 0px 1px 4px black;
+}
+
+.col-2{
+  width: 16.333333;
+}
+.col-9{
+  width: 75%;
+}
+.cart_heading{
+  background:#f4f6f8 ;
+  padding: 10px;
+}
+.cart_image img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.verticalalign{
+  align-items: center;
+  margin-top: 10px;
+}
+.text-center{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cert_remove{
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.summary_heading{
+  background: #f4f6f8;
+  padding: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.summary_details{
+  background: rgb(235, 77, 19);
   color: white;
+  padding: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.mb-10{
+  margin-bottom: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search{
+  margin-left: 650px;
+}
+.Sbutton{
+  margin: 5px;
+}
+.container{
+  background-color: #f4f6f8 ;
 }
